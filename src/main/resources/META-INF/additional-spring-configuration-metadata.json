@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "config.base-url.endpoint.mscv-products",
+      "type": "java.lang.String",
+      "description": "Description for config.base-url.endpoint.mscv-products."
+    }
+  ]
+}

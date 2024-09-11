@@ -2,6 +2,7 @@ package com.juan.springcloud.msvc.items.controller;
 
 import com.juan.springcloud.msvc.items.models.Item;
 import com.juan.springcloud.msvc.items.services.ItemService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +17,7 @@ public class ItemController {
 
     private ItemService service;
 
-    public ItemController(ItemService service) {
+    public ItemController(@Qualifier("itemServiceWebClient") ItemService service) {
         this.service = service;
     }
 
